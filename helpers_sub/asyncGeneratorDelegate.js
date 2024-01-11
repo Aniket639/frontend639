@@ -1,7 +1,10 @@
-import _Promise from "@babel/runtime-corejs3/core-js/promise";
-import _Symbol from "@babel/runtime-corejs3/core-js/symbol";
-import _Symbol$iterator from "@babel/runtime-corejs3/core-js/symbol/iterator";
-export default function _asyncGeneratorDelegate(inner, awaitWrap) {
+var _Promise = require("@babel/runtime-corejs3/core-js/promise");
+
+var _Symbol = require("@babel/runtime-corejs3/core-js/symbol");
+
+var _Symbol$iterator = require("@babel/runtime-corejs3/core-js/symbol/iterator");
+
+function _asyncGeneratorDelegate(inner, awaitWrap) {
   var iter = {},
       waiting = false;
 
@@ -57,3 +60,6 @@ export default function _asyncGeneratorDelegate(inner, awaitWrap) {
 
   return iter;
 }
+
+module.exports = _asyncGeneratorDelegate;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

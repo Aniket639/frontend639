@@ -1,8 +1,12 @@
-import _Promise from "@babel/runtime-corejs3/core-js/promise";
-import _Symbol from "@babel/runtime-corejs3/core-js/symbol";
-import _Symbol$asyncIterator from "@babel/runtime-corejs3/core-js/symbol/async-iterator";
-import AwaitValue from "./AwaitValue.js";
-export default function AsyncGenerator(gen) {
+var _Promise = require("@babel/runtime-corejs3/core-js/promise");
+
+var _Symbol = require("@babel/runtime-corejs3/core-js/symbol");
+
+var _Symbol$asyncIterator = require("@babel/runtime-corejs3/core-js/symbol/async-iterator");
+
+var AwaitValue = require("./AwaitValue.js");
+
+function AsyncGenerator(gen) {
   var front, back;
 
   function send(key, arg) {
@@ -99,3 +103,6 @@ AsyncGenerator.prototype["throw"] = function (arg) {
 AsyncGenerator.prototype["return"] = function (arg) {
   return this._invoke("return", arg);
 };
+
+module.exports = AsyncGenerator;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
