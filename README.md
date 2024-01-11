@@ -1,19 +1,19 @@
-# @babel/runtime-corejs3
+# @babel/traverse
 
-> babel's modular runtime helpers with core-js@3 polyfilling
+> The Babel Traverse module maintains the overall tree state, and is responsible for replacing, removing, and adding nodes
 
-See our website [@babel/runtime-corejs3](https://babeljs.io/docs/en/babel-runtime-corejs3) for more information.
+See our website [@babel/traverse](https://babeljs.io/docs/en/babel-traverse) for more information or the [issues](https://github.com/babel/babel/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22pkg%3A%20traverse%22+is%3Aopen) associated with this package.
 
 ## Install
 
 Using npm:
 
 ```sh
-npm install --save-dev @babel/runtime-corejs3
+npm install --save-dev @babel/traverse
 ```
 
 or using yarn:
 
 ```sh
-yarn add @babel/runtime-corejs3 --dev
+yarn add @babel/traverse --dev
 ```
