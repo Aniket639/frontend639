@@ -1,10 +1,16 @@
+var _Promise = require("@babel/runtime-corejs3/core-js/promise");
+
+var _Symbol = require("@babel/runtime-corejs3/core-js/symbol");
+
+var _Symbol$iterator = require("@babel/runtime-corejs3/core-js/symbol/iterator");
+
 function _asyncGeneratorDelegate(inner, awaitWrap) {
   var iter = {},
       waiting = false;
 
   function pump(key, value) {
     waiting = true;
-    value = new Promise(function (resolve) {
+    value = new _Promise(function (resolve) {
       resolve(inner[key](value));
     });
     return {
@@ -15,8 +21,8 @@ function _asyncGeneratorDelegate(inner, awaitWrap) {
 
   ;
 
-  if (typeof Symbol === "function" && Symbol.iterator) {
-    iter[Symbol.iterator] = function () {
+  if (typeof _Symbol === "function" && _Symbol$iterator) {
+    iter[_Symbol$iterator] = function () {
       return this;
     };
   }
@@ -56,3 +62,4 @@ function _asyncGeneratorDelegate(inner, awaitWrap) {
 }
 
 module.exports = _asyncGeneratorDelegate;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
