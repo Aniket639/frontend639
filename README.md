@@ -1,73 +1,70 @@
-# Autoprefixer [![Cult Of Martians][cult-img]][cult]
+# Getting Started with Create React App
 
-<img align="right" width="94" height="71"
-     src="http://postcss.github.io/autoprefixer/logo.svg"
-     title="Autoprefixer logo by Anton Lovchikov">
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[PostCSS] plugin to parse CSS and add vendor prefixes to CSS rules using values
-from [Can I Use]. It is [recommended] by Google and used in Twitter and Alibaba.
+## Available Scripts
 
-Write your CSS rules without vendor prefixes (in fact, forget about them
-entirely):
+In the project directory, you can run:
 
-```css
-::placeholder {
-  color: gray;
-}
+### `npm start`
 
-.image {
-  background-image: url(image@1x.png);
-}
-@media (min-resolution: 2dppx) {
-  .image {
-    background-image: url(image@2x.png);
-  }
-}
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Autoprefixer will use the data based on current browser popularity and property
-support to apply prefixes for you. You can try the [interactive demo]
-of Autoprefixer.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-```css
-::-moz-placeholder {
-  color: gray;
-}
-:-ms-input-placeholder {
-  color: gray;
-}
-::-ms-input-placeholder {
-  color: gray;
-}
-::placeholder {
-  color: gray;
-}
+### `npm test`
 
-.image {
-  background-image: url(image@1x.png);
-}
-@media (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 2dppx) {
-  .image {
-    background-image: url(image@2x.png);
-  }
-}
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Twitter account for news and releases: [@autoprefixer].
+### `npm run build`
 
-<a href="https://evilmartians.com/?utm_source=autoprefixer">
-<img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg" alt="Sponsored by Evil Martians" width="236" height="54">
-</a>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-[interactive demo]: https://autoprefixer.github.io/
-[@autoprefixer]:    https://twitter.com/autoprefixer
-[recommended]:      https://developers.google.com/web/tools/setup/setup-buildtools#dont_trip_up_with_vendor_prefixes
-[Can I Use]:        https://caniuse.com/
-[cult-img]:         http://cultofmartians.com/assets/badges/badge.svg
-[PostCSS]:          https://github.com/postcss/postcss
-[cult]:             http://cultofmartians.com/tasks/autoprefixer-grid.html
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Docs
-Read **[full docs](https://github.com/postcss/autoprefixer#readme)** on GitHub.
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
